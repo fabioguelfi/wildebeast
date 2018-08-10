@@ -20,7 +20,6 @@ img {
 }
 
 /* GRID GERAL */
-
 .estrutura {
     display: grid;
     grid-template-columns: minmax(150px, 1fr) 3fr 300px;
@@ -68,9 +67,32 @@ header, nav, ul {
 
 }
 
+/* SIDENAV */
 .sidenav {
     grid-area: sidenav;
+    background: #fafbfc;
+    padding: 30px;
 }
+
+.sidenav li a {
+    display: block;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 0px auto 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(44,44,44, 0.4);
+    transition: .1s ease-out;
+}
+
+.sidenav li a:hover {
+    background: #b07dfb;
+}
+
+
+
+
 
 .content {
     grid-area: content;
